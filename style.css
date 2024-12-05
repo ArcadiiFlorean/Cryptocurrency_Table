@@ -1,0 +1,470 @@
+/*header*/
+
+.header {
+  margin-bottom: 41px;
+}
+
+.dropdownmenu ul,
+.dropdownmenu li {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdownmenu ul {
+  background: gray;
+  list-style: none;
+  width: 100%;
+}
+
+.dropdownmenu li {
+  float: left;
+  position: relative;
+  width: auto;
+}
+
+.dropdownmenu a {
+  display: block;
+  padding: 15px 55px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  font-weight: 400;
+  font-size: 20px;
+  color: #4f4f4f;
+}
+
+.dropdownmenu li:hover a {
+  background: #8da7d7;
+}
+
+#submenu {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  visibility: hidden;
+  z-index: 1;
+}
+
+li:hover ul#submenu {
+  opacity: 1;
+  top: 48px;
+  visibility: visible;
+}
+
+#submenu li {
+  float: none;
+  width: 100%;
+}
+
+#submenu a:hover {
+  background: #8da7d7;
+}
+
+#submenu a {
+  background-color: #d3e0f9;
+}
+
+.nav_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+
+.nav_btn {
+  align-items: center;
+  border-radius: 4px;
+  border: none;
+  width: 144px;
+  height: 48px;
+  background: #d3e0f9;
+  font-weight: 600;
+  font-size: 16px;
+}
+.nav_btn:hover {
+  background-color: #8da7d7;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/*hero*/
+.hero {
+  margin-bottom: 101px;
+}
+
+.hero__content {
+  display: flex;
+}
+
+.hero__title {
+  font-weight: 500;
+  font-size: 62px;
+  line-height: 116%;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+
+.hero__paragrath {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  color: #616161;
+  max-width: 519px;
+  margin-bottom: 38px;
+}
+
+.buttons {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 82px;
+}
+
+.hero__button--primary {
+  border-radius: 4px;
+  padding: 16px 52px;
+  border: none;
+  width: 206px;
+  height: 69px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  background: #2463f5;
+  gap: 24px;
+}
+
+.hero__button--primary:hover {
+  background-color: #94afec;
+  transform: scale(1.05);
+  cursor: pointer;
+  color: #2463f5;
+}
+
+.hero__button--secondary {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 16px 40px 16px 30px;
+  width: 220px;
+  height: 69px;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--black);
+}
+
+.hero__button--secondary:hover {
+  background-color: #2463f5;
+  transform: scale(1.05);
+  cursor: pointer;
+  color: white;
+}
+
+.hero__content--left {
+  display: flex;
+  flex-direction: column;
+  max-width: 556px;
+  margin-left: 73px;
+}
+
+.hero__img {
+  margin-right: 65px;
+}
+
+.hero__crypto__icon {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+/*grafic*/
+
+.grafic__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 255px;
+  margin-bottom: 124px;
+}
+
+.grafic__title {
+  font-weight: 700;
+  font-size: 54px;
+  color: black;
+  max-width: 483px;
+}
+
+.grafic__paragrath {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  color: #333;
+  max-width: 402px;
+}
+
+.grafic__img {
+  margin: 0 135px;
+}
+
+/*table*/
+.table__section {
+  overflow: auto;
+  margin-bottom: 124px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  min-width: 1000px;
+  border-collapse: collapse;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  background-color: bisque;
+  font-weight: 400;
+  font-size: 12px;
+  color: black;
+}
+
+th,
+td {
+  border-bottom: 1px solid rgb(230, 223, 223);
+  padding: 10px 20px;
+  text-align: center;
+}
+
+tr:hover td {
+  color: blueviolet;
+  cursor: pointer;
+  background-color: rgb(253, 238, 221);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.table__btn--left {
+  border-radius: 44px;
+  padding: 8px 21px;
+  width: 83px;
+  height: 36px;
+  background: rgba(225, 76, 87, 0.1);
+  font-weight: 600;
+  font-size: 12px;
+  color: #fd3f05;
+  border: none;
+  cursor: pointer;
+}
+
+.table__btn--left:hover {
+  background-color: rgb(255, 247, 0);
+  color: #000000;
+  transition: all 0.5s ease;
+}
+.table__btn--right {
+  border-radius: 44px;
+  padding: 8px 21px;
+  width: 82px;
+  height: 36px;
+  background: #2463f5;
+  font-family: var(--font4);
+  font-weight: 600;
+  font-size: 12px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.table__btn--right:hover {
+  background-color: rgb(255, 247, 0);
+  color: #000000;
+  transition: all 0.5s ease;
+}
+
+/*security*/
+
+.security__content {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.security {
+  background-color: #f8fffd;
+  margin-bottom: 124px;
+}
+
+.security__title {
+  font-weight: 700;
+  font-size: 54px;
+  color: black;
+  max-width: 523px;
+  margin-bottom: 16px;
+}
+.security__paragrath {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 161%;
+  color: #4f4f4f;
+  max-width: 509px;
+  margin-bottom: 44px;
+}
+
+.security__button {
+  border-radius: 4px;
+  padding: 16px 52px;
+  width: 206px;
+  height: 69px;
+  background: #2463f5;
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  border: none;
+}
+
+/*card*/
+
+.card {
+  margin-bottom: 124px;
+}
+
+.card__description {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 400px;
+}
+.card__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  font-size: 54px;
+  text-align: center;
+  color: black;
+  margin-bottom: 12px;
+}
+
+.card__paragrath {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  text-align: center;
+  color: #4f4f4f;
+  margin-bottom: 48px;
+}
+
+.card__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 359px;
+}
+
+.card__img--link {
+  margin-bottom: 42px;
+}
+
+.card__name {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: black;
+  margin-bottom: 12px;
+}
+
+.card_text {
+  display: flex;
+  text-align: center;
+  max-width: 255px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  text-align: center;
+  color: #5f5a69;
+}
+
+/*touch*/
+
+.touch {
+  margin-bottom: 125px;
+}
+
+.touch__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 40px;
+  background-size: cover;
+  background-image: url(./img/Mask\ group.svg);
+  background-repeat: no-repeat;
+  background-color: #2463f5;
+}
+.touch_title {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 111%;
+  color: white;
+  margin-top: 78px;
+  margin-bottom: 8px;
+}
+
+.touch__paragrath {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  text-align: center;
+  color: white;
+  margin-bottom: 32px;
+  max-width: 348px;
+}
+
+.touch__btn {
+  border-radius: 4px;
+  width: 181px;
+  height: 59px;
+  background: #fff;
+  font-family: var(--font4);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--black);
+  margin-bottom: 77px;
+}
+
+.touch__btn:hover {
+}
+
+/*footer*/
+.footer___content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__list--left {
+  margin-top: 30px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 212px;
+  margin-right: 197px;
+}
+
+.footer__logo {
+  margin-bottom: 18px;
+}
+
+.footer__text {
+  margin-bottom: 31px;
+}
+.footer__list {
+}
