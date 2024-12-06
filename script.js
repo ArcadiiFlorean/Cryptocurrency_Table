@@ -35,6 +35,8 @@ async function fetchAndDisplayData() {
       borrowApyCell.textContent = `${(Math.random() * 5).toFixed(2)}%`; // Example APY values
 
       const actionsCell = document.createElement("td");
+      const priceCell = document.createElement("td");
+      priceCell.textContent = `$ ${Number(asset.priceUsd).toFixed(2)}`;
 
       // Append cells to the row
       row.appendChild(assetCell);
@@ -43,6 +45,7 @@ async function fetchAndDisplayData() {
       row.appendChild(depositApyCell);
       row.appendChild(borrowApyCell);
       row.appendChild(actionsCell);
+      row.appendChild(priceCell);
 
       // Append the row to the table body
       tableBody.appendChild(row);
