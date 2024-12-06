@@ -64,7 +64,6 @@ async function fetchAndDisplayData() {
       row.appendChild(depositApyCell);
       row.appendChild(borrowApyCell);
       row.appendChild(priceCell);
-      row.appendChild(actionsCell);
 
       // Append the row to the table body
       tableBody.appendChild(row);

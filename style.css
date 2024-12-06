@@ -222,7 +222,7 @@ thead th {
   top: 0;
   background-color: rgb(235, 235, 235);
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   color: black;
 }
 
@@ -231,6 +231,7 @@ td {
   border-bottom: 14px solid #faf9fb;
   padding: 10px 20px;
   text-align: center;
+  font-weight: bold;
 }
 
 tr {
@@ -326,6 +327,9 @@ tr:hover td {
   font-size: 24px;
   color: #fff;
   border: none;
+}
+
+.security__button:hover {
 }
 
 /*card*/
