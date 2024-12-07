@@ -78,14 +78,17 @@ li:hover ul#submenu {
   border: none;
   width: 144px;
   height: 48px;
-  background: #d3e0f9;
+  background: #0059fe;
   font-weight: 600;
   font-size: 16px;
+  color: white;
 }
 .nav_btn:hover {
-  background-color: #8da7d7;
+  background-color: #ffffff;
   transform: scale(1.05);
   cursor: pointer;
+  color: #2463f5;
+  border: 1px solid blue;
 }
 
 /*hero*/
@@ -134,10 +137,11 @@ li:hover ul#submenu {
 }
 
 .hero__button--primary:hover {
-  background-color: #94afec;
+  background-color: #ffffff;
   transform: scale(1.05);
   cursor: pointer;
   color: #2463f5;
+  border: 1px solid blue;
 }
 
 .hero__button--secondary {
@@ -241,7 +245,7 @@ tr {
 tr:hover td {
   color: blueviolet;
   cursor: pointer;
-  background-color: rgb(253, 238, 221);
+  background-color: rgb(221, 220, 217);
 }
 
 .btn {
@@ -330,6 +334,11 @@ tr:hover td {
 }
 
 .security__button:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+  cursor: pointer;
+  color: #2463f5;
+  border: 1px solid blue;
 }
 
 /*card*/
@@ -448,6 +457,11 @@ tr:hover td {
 }
 
 .touch__btn:hover {
+  background-color: blue;
+  transform: scale(1.05);
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
 }
 
 /*footer*/

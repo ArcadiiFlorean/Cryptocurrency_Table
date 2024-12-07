@@ -5,6 +5,9 @@ async function fetchAndDisplayData() {
   try {
     // Fetch data from the CoinCap API
     const response = await fetch(apiUrl);
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
     const { data } = await response.json(); // CoinCap API returns the data inside a `data` key
 
     // Reference the table body
@@ -19,6 +22,7 @@ async function fetchAndDisplayData() {
 
       // Create cells for each piece of data
       const assetCell = document.createElement("td");
+      assetCell.classList.add("asset-cell");
       assetCell.innerHTML = `
         <img class="coint__img" src="https://assets.coincap.io/assets/icons/${asset.symbol.toLowerCase()}@2x.png" alt="${
         asset.name
@@ -41,16 +45,6 @@ async function fetchAndDisplayData() {
       const priceCell = document.createElement("td");
       const currentPrice = Number(asset.priceUsd).toFixed(2);
       priceCell.textContent = `$ ${currentPrice}`;
-
-      // Apply color based on comparison with previous value
-      if (previousData[asset.id] !== undefined) {
-        const previousPrice = previousData[asset.id];
-        if (currentPrice > previousPrice) {
-          priceCell.classList.add("up");
-        } else if (currentPrice < previousPrice) {
-          priceCell.classList.add("down");
-        }
-      }
 
       // Update previousData with the current price
       previousData[asset.id] = currentPrice;
